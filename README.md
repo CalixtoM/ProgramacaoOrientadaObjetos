@@ -15,6 +15,8 @@ Repositório dedicado aos projetos realizados nas aulas de POO do curso de ADS d
 
 - Exercicio 2 - Criar um servlets que a partir da hora atual retorne bom dia, boa tarde, boa noite ou vá dormir.
 
+- Exercicio 3 - Loteria Servlet que responda pela URL loteria html e apresente uma tabela com 6 números aleatórios não repetidos entre 1 e 60.
+
 ## Aula 04 - ServLets + Forms
 
 Crie um projeto de aplicação JavaEE com uma página inicial em HTML apresentando 2 formulários para respostas dinámicas dos seguintes Servlets:
