@@ -25,4 +25,8 @@ Crie um projeto de aplicação JavaEE com uma página inicial em HTML apresentan
 
 - Exercicio 2 - RandomServlet, que responda uma página com uma tabela de N numeros aleatórios conforme parámetro informado pelo usuário.
 
+## Aula 05 - Vue JS + API
+
+- Tarefa - Criação de um sistema de tarefas consumindo uma API.
+
 # 🛠 PROJETO EM DESENVOLVIMENTO
