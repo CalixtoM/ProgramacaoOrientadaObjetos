@@ -27,6 +27,6 @@ Crie um projeto de aplicação JavaEE com uma página inicial em HTML apresentan
 
 ## Aula 05 - Vue JS + API
 
-- Tarefa - Criação de um sistema de tarefas consumindo uma API.
+- Tarefa - Criação de um sistema de tarefas/tasks consumindo uma API utilizando JAVA, Servlets, Vue JS e API.
 
 # 🛠 PROJETO EM DESENVOLVIMENTO
