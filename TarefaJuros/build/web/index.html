@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label>Capital:</label>
+                    <input v-model="newJuros" type="text" class="form-control">
+                    <button v-on:click="addJuros()" class="btn btn-success"><i class="bi bi-plus-lg"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <p> {{ newJuros }} </p>
+            </div>
+        </div>
+        
+        <script>
+            const { createApp } = Vue
+            
+            createApp({
+                data() {
+                    return {
+                        message: 'Hello Vue!',
+                        loading: false,
+                        error: null,
+                        list: null,
+                        newJuros: ""
+                    }
+                },
+                mounted(){
+                    this.loadList();
+                },
+                methods: {
+                    addJuros(){
+                        this.loadList("add="+this.newJuros);
+                        this.newJuros = "";
+                    },
+                    loadList(params){
+                        var url = "Matheus-juros-simples.json";
+                        if(params) url = url + '?' + params;
+                        var app = this;
+                        try{
+                            
+                            app.loading = true;
+                            fetch(url).then(function (response) {
+                                return response.json();
+                            }).then(function (data) {
+                                app.list = data;
+                            }).catch(function (e) {
+                                app.error = e;
+                            }).finally(function () {
+                                app.loading = false;
+                            });
+
+                        } catch (err) {
+                            this.error = err;
+                        }
+                    }
+                }
+            }).mount('#app')
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>
