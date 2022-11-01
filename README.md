@@ -29,4 +29,8 @@ Crie um projeto de aplicação JavaEE com uma página inicial em HTML apresentan
 
 - Tarefa - Criação de um sistema de tarefas/tasks consumindo uma API utilizando JAVA, Servlets, Vue JS e API.
 
+## Aula 10 - JSP
+
+- Tarefa Opcional - Desenvolver um sistema que exiba o calendario de um mês especifico de acordo com o mês informado.
+
 # 🛠 PROJETO EM DESENVOLVIMENTO
