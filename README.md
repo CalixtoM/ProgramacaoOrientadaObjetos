@@ -33,4 +33,8 @@ Crie um projeto de aplicação JavaEE com uma página inicial em HTML apresentan
 
 - Tarefa Opcional - Desenvolver um sistema que exiba o calendario de um mês especifico de acordo com o mês informado.
 
+## Aula 11 - JSP + JSPF
+
+- Tarefa Opcional - Desenvolver um site utilizando páginas JSPs e elementos separados por JSPF. 
+
 # 🛠 PROJETO EM DESENVOLVIMENTO
